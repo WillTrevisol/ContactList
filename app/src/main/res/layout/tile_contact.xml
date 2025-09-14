@@ -13,10 +13,17 @@
         android:textSize="24sp" />
 
     <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:textSize="15sp" />
+
+    <TextView
         android:id="@+id/emailTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/email"
-        android:textSize="15sp" />
+        android:textSize="12sp" />
 
 </LinearLayout>

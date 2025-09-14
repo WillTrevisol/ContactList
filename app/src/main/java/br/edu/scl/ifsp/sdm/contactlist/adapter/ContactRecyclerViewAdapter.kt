@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import br.edu.scl.ifsp.sdm.contactlist.R
 import br.edu.scl.ifsp.sdm.contactlist.databinding.TileContactBinding
 import br.edu.scl.ifsp.sdm.contactlist.model.Contact
-import br.edu.scl.ifsp.sdm.contactlist.view.MainActivity
 import br.edu.scl.ifsp.sdm.contactlist.view.OnContactClickListener
 
 class ContactRecyclerViewAdapter(
@@ -20,6 +19,7 @@ class ContactRecyclerViewAdapter(
     inner class ContactViewHolder(tileContactBinding: TileContactBinding): ViewHolder(tileContactBinding.root) {
         val nameTextView: TextView = tileContactBinding.nameTextView
         val emailTextView: TextView = tileContactBinding.emailTextView
+        val phoneTextView: TextView = tileContactBinding.phoneTextView
 
         init {
             tileContactBinding.root.apply {
@@ -62,6 +62,7 @@ class ContactRecyclerViewAdapter(
             with(holder) {
                 nameTextView.text = it.name
                 emailTextView.text = it.email
+                phoneTextView.text = it.phone
             }
         }
     }
